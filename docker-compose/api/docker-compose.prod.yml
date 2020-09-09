@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  api:
+    build:
+      dockerfile: Dockerfile
+    environment:
+      APP_ENV: production
+    volumes:
+      - ../project/api:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next

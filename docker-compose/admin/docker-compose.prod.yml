@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  admin:
+    build:
+      dockerfile: Dockerfile
+    environment:
+      APP_ENV: production
+    volumes:
+      - ../project/admin:/usr/src/app
+      - /usr/src/admin/node_modules
+      - /usr/src/admin/.next

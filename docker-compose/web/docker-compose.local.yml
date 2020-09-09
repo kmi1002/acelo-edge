@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  web:
+    build:
+      dockerfile: Dockerfile.local
+    environment:
+      APP_ENV: local
+    volumes:
+      - ../project/web:/usr/src/app
+    depends_on:
+      - postgre
+      - api

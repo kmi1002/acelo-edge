@@ -1,0 +1,33 @@
+version: '3'
+services:
+
+  postgre:
+    container_name: "project-postgresql"
+    build:
+      context: ../docker/postgresql
+      dockerfile: Dockerfile
+    environment:
+      POSTGRES_HOST: localhost
+      POSTGRES_DATABASE: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - ../data/postgres/data:/var/lib/postgresql/data
+    ports:
+      - "${POSTGRES_PORT}:${POSTGRES_PORT}"
+    restart: always # 이거 다름
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 65535
+        hard: 65535
+    healthcheck:
+      test: ["CMD", "docker-healthcheck"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"
