@@ -23,6 +23,7 @@ $> git clone https://github.com/kmi1002/nextjs-boilerplate.git acelo-edge-web
 $> ./git-module.sh master https://github.com/kmi1002/acelo-edge-api.git project/api
 $> ./git-module.sh master https://github.com/kmi1002/acelo-edge-admin.git project/admin
 $> ./git-module.sh master https://github.com/kmi1002/acelo-edge-web.git project/web
+$> ./git-module.sh master https://github.com/kmi1002/acelo-edge-app.git project/app
 ```
 
 ## .gitmodules 파일

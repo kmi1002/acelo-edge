@@ -10,3 +10,7 @@
 	path = project/web
 	url = https://github.com/kmi1002/acelo-edge-web.git
 	branch = master
+[submodule "project/app"]
+	path = project/app
+	url = https://github.com/kmi1002/acelo-edge-app.git
+	branch = master
