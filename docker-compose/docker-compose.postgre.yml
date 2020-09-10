@@ -2,7 +2,7 @@ version: '3'
 services:
 
   postgre:
-    container_name: "project-postgresql"
+    container_name: "acelo-edge-postgresql"
     build:
       context: ../docker/postgresql
       dockerfile: Dockerfile

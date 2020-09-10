@@ -2,7 +2,7 @@ version: '3'
 
 services:
   admin:
-    container_name: "project-admin"
+    container_name: "acelo-edge-admin"
     build:
       context: ../project/admin
     environment:

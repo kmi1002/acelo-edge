@@ -5,38 +5,38 @@
 
 ## API 프로젝트 생성
 ```
-$> git clone https://github.com/{GITHUB_ID}/nestjs-boilerplate.git {project}-api
+$> git clone https://github.com/kmi1002/nestjs-boilerplate.git acelo-edge-api
 ```
 
 ## Admin 프로젝트 생성
 ```p
-$> git clone https://github.com/{GITHUB_ID}/nextjs-boilerplate.git {project}-admin
+$> git clone https://github.com/kmi1002/nextjs-boilerplate.git acelo-edge-admin
 ```
 
 ## Web 프로젝트 생성
 ```
-$> git clone https://github.com/{GITHUB_ID}/nextjs-boilerplate.git {project}-web
+$> git clone https://github.com/kmi1002/nextjs-boilerplate.git acelo-edge-web
 ```
 
 ## 서브 모듈 추가
 ```
-$> ./git-module.sh master https://github.com/{GITHUB_ID}/{project}-api.git project/api
-$> ./git-module.sh master https://github.com/{GITHUB_ID}/{project}-admin.git project/admin
-$> ./git-module.sh master https://github.com/{GITHUB_ID}/{project}-web.git project/web
+$> ./git-module.sh master https://github.com/kmi1002/acelo-edge-api.git project/api
+$> ./git-module.sh master https://github.com/kmi1002/acelo-edge-admin.git project/admin
+$> ./git-module.sh master https://github.com/kmi1002/acelo-edge-web.git project/web
 ```
 
 ## .gitmodules 파일
 ```
 [submodule "project/api"]
 	path = project/api
-	url = https://github.com/{GITHUB_ID}/{project}-api.git
+	url = https://github.com/kmi1002/acelo-edge-api.git
 	branch = master
 [submodule "project/admin"]
 	path = project/admin
-	url = https://github.com/{GITHUB_ID}/{project}-admin.git
+	url = https://github.com/kmi1002/acelo-edge-admin.git
 	branch = master
 [submodule "project/web"]
 	path = project/web
-	url = https://github.com/{GITHUB_ID}/{project}-web.git
+	url = https://github.com/kmi1002/acelo-edge-web.git
 	branch = master
 ```

@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    container_name: "project-web"
+    container_name: "acelo-edge-web"
     build:
       context: ../project/web
     environment:

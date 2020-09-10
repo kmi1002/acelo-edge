@@ -4,7 +4,7 @@ function dev_all()
 {
   cp .env.dev .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.dev.yml \
     -f ./docker-compose/admin/docker-compose.base.yml \
@@ -18,7 +18,7 @@ function dev_api()
 {
   cp .env.dev .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.dev.yml \
     up -d $build --remove-orphans
@@ -28,7 +28,7 @@ function dev_admin()
 {
   cp .env.dev .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.dev.yml \
     -f ./docker-compose/admin/docker-compose.base.yml \
@@ -40,7 +40,7 @@ function dev_web()
 {
   cp .env.dev .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.dev.yml \
     -f ./docker-compose/web/docker-compose.base.yml \

@@ -4,7 +4,7 @@ function prod_all()
 {
   cp .env.prod .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.prod.yml \
     -f ./docker-compose/admin/docker-compose.base.yml \
@@ -19,7 +19,7 @@ function prod_api()
 {
   cp .env.prod .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.prod.yml \
     up -d $build --remove-orphans
@@ -29,7 +29,7 @@ function prod_admin()
 {
   cp .env.prod .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.prod.yml \
     -f ./docker-compose/admin/docker-compose.base.yml \
@@ -41,7 +41,7 @@ function prod_web()
 {
   cp .env.prod .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.prod.yml \
     -f ./docker-compose/web/docker-compose.base.yml \

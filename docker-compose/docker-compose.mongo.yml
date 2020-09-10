@@ -2,7 +2,7 @@ version: '3'
 services:
 
   mongo:
-    container_name: "project-mongo"
+    container_name: "acelo-edge-mongo"
     build:
       context: ../docker/mongo
       dockerfile: Dockerfile

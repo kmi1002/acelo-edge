@@ -4,7 +4,7 @@ function local_all()
 {
   cp .env.local .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/docker-compose.postgre.yml \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.local.yml \
@@ -19,7 +19,7 @@ function local_api()
 {
   cp .env.local .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/docker-compose.postgre.yml \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.local.yml \
@@ -30,7 +30,7 @@ function local_admin()
 {
   cp .env.local .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/docker-compose.postgre.yml \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.local.yml \
@@ -43,7 +43,7 @@ function local_web()
 {
   cp .env.local .env
   docker-compose \
-    -p project \
+    -p acelo-edge \
     -f ./docker-compose/docker-compose.postgre.yml \
     -f ./docker-compose/api/docker-compose.base.yml \
     -f ./docker-compose/api/docker-compose.local.yml \

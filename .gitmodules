@@ -1,0 +1,12 @@
+[submodule "project/api"]
+	path = project/api
+	url = https://github.com/kmi1002/acelo-edge-api.git
+	branch = master
+[submodule "project/admin"]
+	path = project/admin
+	url = https://github.com/kmi1002/acelo-edge-admin.git
+	branch = master
+[submodule "project/web"]
+	path = project/web
+	url = https://github.com/kmi1002/acelo-edge-web.git
+	branch = master
